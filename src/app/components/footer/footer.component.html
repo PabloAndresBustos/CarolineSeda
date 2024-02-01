@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="container_carolina">
+        <h1><img src="assets/Logotipo.png" alt="">Carolina Seda</h1>
+    </div>
+    <div class="container_networs">
+        <h1>Links</h1>
+        <ul>
+            <li><img src="assets/youtube-white.svg" alt=""></li>
+            <li><img src="assets/facebook-white.svg" alt=""></li>
+            <li><img src="assets/x-white.svg" alt=""></li>
+            <li><img src="assets/instagram-white.svg" alt=""></li>
+        </ul>
+    </div>
+    <div class="container_legal">
+        <h1>Legal</h1>
+        <ul class="links">
+            <li>Politica de privacidad</li>
+            <li>Terminos de uso</li>
+            <li>Aviso legal</li>
+            <li>Politica de cookies</li>
+        </ul>
+    </div>
+    <div class="container_contact">
+        <h1>Contacto</h1>
+        <form 
+        [formGroup]="contactForm"
+        (ngSubmit)="sendContact()"
+        >
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input formControlName="email" type="email" class="form-control" placeholder="email@dominio.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensage</label>
+                <textarea formControlName="message" class="form-control" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="send">Enviar</button>
+        </form>
+    </div>
+
+</div>

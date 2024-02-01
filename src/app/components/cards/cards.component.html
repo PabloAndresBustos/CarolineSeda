@@ -1,0 +1,14 @@
+<div class="card">
+    @if (show) {
+      <img src={{imagen}} class="card-img-top" alt="...">
+    }  
+      <img src="{{imagenTop}}" class="upImage" alt="">
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <p class="card-text">{{text}}</p>
+        @if (showButton) {
+          <a href="#" class="btn btn-primary">Ir a {{title}}</a>
+        }
+      </div>
+  </div>
+  

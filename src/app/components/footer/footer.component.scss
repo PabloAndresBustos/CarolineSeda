@@ -1,0 +1,98 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .container_carolina{
+        width: 300px;
+        
+        h1{
+            display: flex;
+            flex-direction: column;
+            color: white;
+
+            img{
+                margin-left: 4rem;
+                width: 100px;
+            }
+        }
+    }
+
+    .container_networs, .container_legal, .container_contact{
+        width: 275px;
+        height: 304px;
+
+        h1{
+            text-align: center;
+            color: white;
+        }
+
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 4rem 0 0 0;
+            padding: 0;
+            list-style: none;
+
+            li{
+                img{
+                    width: 24px;
+                }
+            }
+        }
+
+        .links{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            color: white;
+
+            li{
+                margin-left: 4rem;
+            }
+        }
+
+        ul:hover{
+            cursor: pointer;
+        }
+
+        label{
+            color: white;
+        }
+
+        textarea{
+            resize: none;
+        }
+
+        .send{
+            width: 100%;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+
+        .container_carolina{
+            display: none;
+        }
+
+        .container_networs{
+            margin-top: 2rem;
+            height: 200px;
+        }
+
+        .container_networs, .container_legal, .container_contact{
+            align-items: center;
+
+        }
+    }
+    
+}
